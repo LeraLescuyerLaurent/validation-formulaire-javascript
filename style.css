@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800;900&display=swap');
+*{
+
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: rgb(139, 21, 218);
+    margin: 0;
+    padding: 0;
+}
+.container-formulaire{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    width: 400px;
+    max-width: 100%;
+}
+.header{
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    border-bottom: 2px solid #f7f7f7;
+    border-radius: 5px;
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 0.75rem;
+    padding: 10px;
+    width: 100%;
+}
+.form-control.erreur input{
+    border-color: #e74c3c;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+
+}
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.erreur i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.erreur small{
+    font-size: 0.7rem;
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control.success small{
+    font-size: 0.7rem;
+    color: #2ecc71;
+    visibility: visible;
+}
+.form button{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    font-family: inherit;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.form button:hover{
+    cursor: pointer;
+    background-color: #8f08c9;
+    border: none;
+    border: 2px solid #8f08c9;
+}
+.form button:focus{
+    cursor: pointer;
+    background-color: #8f08c9;
+    border: none;
+    border: 2px solid #8f08c9;
+}
